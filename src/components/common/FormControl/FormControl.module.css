@@ -1,0 +1,43 @@
+.formControl.error input {
+    border: solid #EB5757 1px;
+}
+
+.formControl.error span {
+    margin-top: 5px;
+    display: block;
+    color: #EB5757;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 14px;
+}
+.formControl .formInput{
+    margin-top: 25px;
+}
+
+.formInput {
+    position: relative;
+}
+
+.formInput input:focus {
+  border-radius: 6px;
+  border: 1px solid #C4C4C4;
+}
+
+.formInput label {
+    color: #8C8C8C;
+    font-family: Roboto;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 14px;
+    position: absolute;
+    top: calc(50% - 10px);
+    left: 15px;
+    transition-duration: 0.5s;
+}
+
+.formInput input:focus + label {
+    top: 10px;
+    font-size: 12px;
+}

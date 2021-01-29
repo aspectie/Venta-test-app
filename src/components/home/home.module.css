@@ -1,0 +1,48 @@
+.Header {
+    background: radial-gradient(138.81% 16453.56% at -23.78% 12.1%, #3C8291 9.59%, #00B5AD 100%);
+    padding: 50px 50px 35px 50px;
+    display: flex;
+    justify-content: center;
+    border-radius: 6px;
+}
+
+.Header p {
+    color: #fff;
+    font-family: Roboto;
+    font-weight: 300;
+    font-size: 15px;
+    line-height: 16px;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.loadWrapper {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.loadRing {
+  display: inline-block;
+  width: 70px;
+  height: 70px;
+}
+
+.loadRing:after {
+  content: " ";
+  display: block;
+  width: 55px;
+  height: 55px;
+  border-radius: 50%;
+  border: 5px solid #fff;
+  border-color: #fff transparent transparent transparent;
+  animation: loadRing 1.2s linear infinite;
+}
+@keyframes loadRing {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}

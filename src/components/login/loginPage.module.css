@@ -50,24 +50,56 @@
     display: block;
     width: 100%;
     height: 1px;
-    margin-bottom: 25px;
+    margin: 25px 0 25px 0;
     background: #F2F2F2;
 }
 
 .inputsWrapper input {
     display: block;
     width: calc(100% - 32px);
-    padding: 18px 15px;
-    margin-bottom: 25px;
+    padding: 28px 15px 10px 15px;
     background: #F2F2F2;
     border-radius: 6px;
-    border: none
+    border: 1px solid #F2F2F2;
+    outline: 0;
+    font-family: Roboto;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 16px;
+    text-align: left;
+}
+
+.inputsWrapper input:disabled {
+    padding: 18px 15px;
+    font-size: 14px;
+    font-weight: 400;
 }
 
 .inputsWrapper input::placeholder {
-    color: #8C8C8C;
+    opacity: 0;
 }
 
+.inputsWrapper input:disabled::placeholder {
+    color: #C1C1C1;
+    opacity: 1;
+}
+
+.inputsWrapper .info {
+    display: flex;
+    align-items: center;
+    margin-top: 15px;
+}
+
+.inputsWrapper .info p {
+    margin-left: 10px;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 13px;
+    line-height: 15px;
+    color: #949494;
+}
 
 .buttons {
     font-family: Roboto;
@@ -79,29 +111,31 @@
     justify-content: center;
 }
 
-.buttons a{
-    color: #949494;
-    text-decoration: none;
-}
-
-
-.buttons div {
+.buttons a, .buttons button {
     padding: 15px;
     display: inline-block;
     border-radius: 6px;
+    color: #949494;
+    text-decoration: none;
+    transition-duration: 0.3s;
 }
 
-.buttons div+div {
+.buttons button {
+    background: #EBEBEB;
+    border: 0;
+    outline: 0;
+    cursor: pointer;
     margin-left: 15px;
 }
 
-.buttons .toLogin {
-    background: #EBEBEB;
-}
-
-.buttons .toLogin:hover {
+.buttons button:hover {
     background: linear-gradient(90.26deg, #00B5AD -75.74%, #5F3264 87.41%);
     color: #fff;
+}
+
+.buttons button:disabled {
+    background: #EBEBEB;
+    color: #C1C1C1;
 }
 
 .toLogin:hover ~ .arrowIcon {
@@ -119,6 +153,21 @@
     background-image: url('../../assets/arrow.svg');
 }
 
-.forgot a:hover {
+.forgot a:hover, a.active {
     color: #10A7A5;
+}
+
+a.active:hover {
+    color: #949494;
+}
+
+.ServerError {
+    margin-top: 5px;
+    display: block;
+    color: #EB5757;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 14px;
 }

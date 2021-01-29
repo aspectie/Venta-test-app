@@ -20,17 +20,17 @@ const LostPass = (props) => {
             <div className={loginPage.main}>
                 <p className={loginPage.title}>Востановление пароля</p>
                 <div className={loginPage.inputsWrapper}>
-                    <input type="login" placeholder={"Логин или e-mail*"}/>
-                </div>
-                <div className="info">
-                    <img src={info}/>
-                    <p>Пароль будет отправлено на электронную почту, к которой привязана учетная запись.</p>
+                    <input type="login" placeholder={"Логин или e-mail*"} disabled={true}/>
+                    <div className={loginPage.info}>
+                        <img src={info}/>
+                        <p>Пароль будет отправлено на электронную почту, к которой привязана учетная запись.</p>
+                    </div>
                 </div>
                 <div className={loginPage.buttons}>
                     <div className={loginPage.forgot}>
-                        <NavLink to="/login">Назад</NavLink>
+                        <NavLink to="/login" className={loginPage.active} >Назад</NavLink>
                     </div>
-                    <div className={loginPage.toLogin}>Восстановить<span className={loginPage.arrowIcon}></span></div>
+                    <div className={loginPage.toLogin}><button type={"submit"} disabled={true}>Восстановить</button></div>
                 </div>
             </div>
         </div>
