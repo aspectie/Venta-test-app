@@ -138,10 +138,6 @@
     color: #C1C1C1;
 }
 
-.toLogin:hover ~ .arrowIcon {
-    background-image: url('../../assets/arrowWhite.svg');
-}
-
 .arrowIcon {
     display: inline-block;
     margin-left: 7px;
