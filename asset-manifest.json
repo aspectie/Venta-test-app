@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/venta/static/css/main.2086e817.chunk.css",
+    "main.js": "/venta/static/js/main.a7d31f14.chunk.js",
+    "main.js.map": "/venta/static/js/main.a7d31f14.chunk.js.map",
+    "runtime-main.js": "/venta/static/js/runtime-main.8186d2fc.js",
+    "runtime-main.js.map": "/venta/static/js/runtime-main.8186d2fc.js.map",
+    "static/js/2.f55da6a4.chunk.js": "/venta/static/js/2.f55da6a4.chunk.js",
+    "static/js/2.f55da6a4.chunk.js.map": "/venta/static/js/2.f55da6a4.chunk.js.map",
+    "index.html": "/venta/index.html",
+    "static/css/main.2086e817.chunk.css.map": "/venta/static/css/main.2086e817.chunk.css.map",
+    "static/js/2.f55da6a4.chunk.js.LICENSE.txt": "/venta/static/js/2.f55da6a4.chunk.js.LICENSE.txt",
+    "static/media/loginPage.module.css": "/venta/static/media/loginHeader.71bede8c.png",
+    "static/media/info.49f8654f.svg": "/venta/static/media/info.49f8654f.svg",
+    "static/media/logo.913e8484.svg": "/venta/static/media/logo.913e8484.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.8186d2fc.js",
+    "static/js/2.f55da6a4.chunk.js",
+    "static/css/main.2086e817.chunk.css",
+    "static/js/main.a7d31f14.chunk.js"
+  ]
+}
